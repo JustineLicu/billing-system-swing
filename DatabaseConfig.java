@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class DatabaseConfig {
 
-  private String DB_URL = "jdbc:mysql://jus@localhost:3306/bs1";
+  private String DB_URL = "jdbc:mysql://root@localhost:3306/bs1";
   private Connection connection;
 
   private static DatabaseConfig instance;

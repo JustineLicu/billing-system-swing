@@ -43,7 +43,11 @@ public class LoginForm {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    register_link_btn.setBackground(null);
+    login_btn.setBackground(CustomColor.PRIMARY);
+
+    login_btn.setForeground(Color.WHITE);
 
     heading_lbl.setBounds(170, 10, 100, 100);
     username_lbl.setBounds(100, 40, 100, 100);

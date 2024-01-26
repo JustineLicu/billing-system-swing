@@ -50,7 +50,14 @@ public class ConsumerDashboard {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    changepass_btn.setBackground(CustomColor.INFO);
+    logout_btn.setBackground(CustomColor.DANGER);
+    refresh_btn.setBackground(CustomColor.INFO);
+    paybill_btn.setBackground(CustomColor.SUCCESS);
+
+    logout_btn.setForeground(Color.WHITE);
+    paybill_btn.setForeground(Color.WHITE);
 
     heading_lbl.setFont(new Font(heading_lbl.getFont().getName(), heading_lbl.getFont().getStyle(), 24));
     bills_lbl.setFont(new Font(bills_lbl.getFont().getName(), bills_lbl.getFont().getStyle(), 22));

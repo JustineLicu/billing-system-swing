@@ -66,7 +66,10 @@ public class EditElectricBillForm {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    edit_btn.setBackground(CustomColor.SUCCESS);
+
+    edit_btn.setForeground(Color.WHITE);
 
     consumer_tf.setEditable(false);
 

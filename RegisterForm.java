@@ -63,7 +63,11 @@ public class RegisterForm {
 
 		addActionListeners();
 
-		frame.getContentPane().setBackground(new Color(0xe7f5fe));
+		frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+		register_btn.setBackground(CustomColor.PRIMARY);
+
+		register_btn.setForeground(Color.WHITE);
+		login_link_rb.setForeground(CustomColor.PRIMARY);
 
 		heading_lbl.setBounds(200, 50, 100, 100);
 		username_lbl.setBounds(100, 82, 100, 100);

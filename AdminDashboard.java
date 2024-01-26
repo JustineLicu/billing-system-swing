@@ -60,7 +60,14 @@ public class AdminDashboard {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    changepass_btn.setBackground(CustomColor.INFO);
+    logout_btn.setBackground(CustomColor.DANGER);
+    editbill_btn.setBackground(CustomColor.WARNING);
+    deletebill_btn.setBackground(CustomColor.DANGER);
+
+    logout_btn.setForeground(Color.WHITE);
+    deletebill_btn.setForeground(Color.WHITE);
 
     heading_lbl.setFont(new Font(heading_lbl.getFont().getName(), heading_lbl.getFont().getStyle(), 24));
 

@@ -30,7 +30,7 @@ public class EditWaterBillForm {
   public JTextField basic_charge_tf = new JTextField();
   public DatePicker water_billdate_tf = new DatePicker();
 
-  public JButton edit_water_btn = new JButton("Save changes");
+  public JButton edit_btn = new JButton("Save changes");
 
   private static EditWaterBillForm instance;
 
@@ -62,7 +62,7 @@ public class EditWaterBillForm {
     frame.add(period_cb);
 
     // button
-    frame.add(edit_water_btn);
+    frame.add(edit_btn);
 
     // textfield
     frame.add(water_consumer_tf);
@@ -74,7 +74,10 @@ public class EditWaterBillForm {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    edit_btn.setBackground(CustomColor.SUCCESS);
+
+    edit_btn.setForeground(Color.WHITE);
 
     water_consumer_tf.setEditable(false);
 
@@ -90,7 +93,7 @@ public class EditWaterBillForm {
     water_billdate_lbl.setBounds(25, 220, 100, 100);
 
     // button
-    edit_water_btn.setBounds(80, 300, 200, 25);
+    edit_btn.setBounds(80, 300, 200, 25);
 
     // textfield combo box
     water_consumer_tf.setBounds(130, 110, 120, 25);
@@ -103,7 +106,7 @@ public class EditWaterBillForm {
 
   public void addActionListeners() {
 
-    edit_water_btn.addActionListener(new ActionListener() {
+    edit_btn.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         if (isFieldEmpty()) {
           return;

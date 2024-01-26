@@ -31,7 +31,7 @@ public class AddWifiBillForm {
 
   public DatePicker billdate_tf = new DatePicker();
 
-  public JButton add_wifi_btn = new JButton("ADD");
+  public JButton add_btn = new JButton("ADD");
 
   private static AddWifiBillForm instance;
 
@@ -57,8 +57,7 @@ public class AddWifiBillForm {
     frame.add(wifi_period_lbl);
     frame.add(billdate_lbl);
 
-    frame.add(add_wifi_btn);
-    frame.setEnabled(true);
+    frame.add(add_btn);
 
     frame.add(wifi_consumer_tf);
     frame.add(provider_cb);
@@ -68,7 +67,10 @@ public class AddWifiBillForm {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    add_btn.setBackground(CustomColor.SUCCESS);
+
+    add_btn.setForeground(Color.WHITE);
 
     wifi_consumer_tf.setEditable(false);
 
@@ -84,7 +86,7 @@ public class AddWifiBillForm {
     wifi_period_lbl.setBounds(25, 160, 150, 100);
     billdate_lbl.setBounds(25, 190, 100, 100);
 
-    add_wifi_btn.setBounds(80, 300, 200, 25);
+    add_btn.setBounds(80, 300, 200, 25);
 
     // TEXTFIELD COMBO BOX
     wifi_consumer_tf.setBounds(130, 110, 120, 25);
@@ -96,7 +98,7 @@ public class AddWifiBillForm {
 
   public void addActionListeners() {
 
-    add_wifi_btn.addActionListener(new ActionListener() {
+    add_btn.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         if (isFieldEmpty()) {
           return;

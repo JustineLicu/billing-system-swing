@@ -28,7 +28,7 @@ public class AddWaterBillForm {
   public JTextField basic_charge_tf = new JTextField();
   public DatePicker water_billdate_tf = new DatePicker();
 
-  public JButton add_water_btn = new JButton("ADD");
+  public JButton add_btn = new JButton("ADD");
 
   private static AddWaterBillForm instance;
 
@@ -60,7 +60,7 @@ public class AddWaterBillForm {
     frame.add(period_cb);
 
     // button
-    frame.add(add_water_btn);
+    frame.add(add_btn);
 
     // textfield
     frame.add(water_consumer_tf);
@@ -72,7 +72,10 @@ public class AddWaterBillForm {
 
     addActionListeners();
 
-    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+    frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    add_btn.setBackground(CustomColor.SUCCESS);
+
+    add_btn.setForeground(Color.WHITE);
 
     water_consumer_tf.setEditable(false);
 
@@ -88,7 +91,7 @@ public class AddWaterBillForm {
     water_billdate_lbl.setBounds(25, 220, 100, 100);
 
     // button
-    add_water_btn.setBounds(80, 300, 200, 25);
+    add_btn.setBounds(80, 300, 200, 25);
 
     // textfield combo box
     water_consumer_tf.setBounds(130, 110, 120, 25);
@@ -101,7 +104,7 @@ public class AddWaterBillForm {
 
   public void addActionListeners() {
 
-    add_water_btn.addActionListener(new ActionListener() {
+    add_btn.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         if (isFieldEmpty()) {
           return;

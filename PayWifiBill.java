@@ -224,7 +224,7 @@ public class PayWifiBill {
           Double total_bill = Utility.computeWifiBill(billRS, true);
 
           total_bill_tf.setText(String.valueOf(total_bill));
-          totalphp_tf.setText("₱" + String.valueOf(total_bill));
+          totalphp_tf.setText("PHP " + String.valueOf(total_bill));
           totalphp_tf.setForeground(Color.ORANGE);
 
           JOptionPane.showMessageDialog(null,
@@ -333,7 +333,7 @@ public class PayWifiBill {
 
         if (Utility.getStatus(total_bill, cash).equals(DatabaseClient.BillStatus.PAID.name())) {
           total_bill_tf.setText(String.valueOf(total_bill));
-          totalphp_tf.setText("₱" + String.valueOf(total_bill));
+          totalphp_tf.setText("PHP " + String.valueOf(total_bill));
           cash_tf.setText(String.valueOf(cash));
           change_tf.setText(String.valueOf(cash - total_bill));
 

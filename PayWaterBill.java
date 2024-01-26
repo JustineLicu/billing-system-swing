@@ -244,7 +244,7 @@ public class PayWaterBill {
           Double total_bill = Utility.computeWaterBill(billRS);
 
           total_bill_tf.setText(String.valueOf(total_bill));
-          totalphp_tf.setText("₱" + String.valueOf(total_bill));
+          totalphp_tf.setText("PHP " + String.valueOf(total_bill));
           totalphp_tf.setForeground(Color.ORANGE);
 
           JOptionPane.showMessageDialog(null,
@@ -358,7 +358,7 @@ public class PayWaterBill {
 
         if (Utility.getStatus(total_bill, cash).equals(DatabaseClient.BillStatus.PAID.name())) {
           total_bill_tf.setText(String.valueOf(total_bill));
-          totalphp_tf.setText("₱" + String.valueOf(total_bill));
+          totalphp_tf.setText("PHP " + String.valueOf(total_bill));
           cash_tf.setText(String.valueOf(cash));
           change_tf.setText(String.valueOf(cash - total_bill));
 

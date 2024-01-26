@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import com.github.lgooddatepicker.components.*;
@@ -62,6 +63,8 @@ public class AddElectricBillForm {
     frame.add(billdate_tf);
 
     addActionListeners();
+
+    frame.getContentPane().setBackground(new Color(0xe7f5fe));
 
     consumer_tf.setEditable(false);
 

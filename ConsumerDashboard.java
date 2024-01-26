@@ -50,6 +50,8 @@ public class ConsumerDashboard {
 
     addActionListeners();
 
+    frame.getContentPane().setBackground(new Color(0xe7f5fe));
+
     heading_lbl.setFont(new Font(heading_lbl.getFont().getName(), heading_lbl.getFont().getStyle(), 24));
     bills_lbl.setFont(new Font(bills_lbl.getFont().getName(), bills_lbl.getFont().getStyle(), 22));
 

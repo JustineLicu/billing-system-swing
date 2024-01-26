@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
@@ -41,6 +42,8 @@ public class LoginForm {
     frame.add(login_btn);
 
     addActionListeners();
+
+    frame.getContentPane().setBackground(new Color(0xe7f5fe));
 
     heading_lbl.setBounds(170, 10, 100, 100);
     username_lbl.setBounds(100, 40, 100, 100);

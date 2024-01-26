@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import javax.swing.*;
@@ -61,6 +62,8 @@ public class RegisterForm {
 		frame.add(login_link_rb);
 
 		addActionListeners();
+
+		frame.getContentPane().setBackground(new Color(0xe7f5fe));
 
 		heading_lbl.setBounds(200, 50, 100, 100);
 		username_lbl.setBounds(100, 82, 100, 100);

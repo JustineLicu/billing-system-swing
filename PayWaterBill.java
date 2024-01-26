@@ -150,7 +150,7 @@ public class PayWaterBill {
     addActionListeners();
 
     // background color
-    frame.getContentPane().setBackground(new Color(0xebebff));
+    frame.getContentPane().setBackground(new Color(0xe7f5fe));
 
     // Disabled Textfields
     consumer_tf.setEditable(false);

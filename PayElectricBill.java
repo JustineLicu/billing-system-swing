@@ -150,7 +150,7 @@ public class PayElectricBill {
     addActionListeners();
 
     // background color
-    frame.getContentPane().setBackground(new Color(0xdff0eb));
+    frame.getContentPane().setBackground(new Color(0xe7f5fe));
 
     // Disabled Textfields
     consumer_tf.setEditable(false);

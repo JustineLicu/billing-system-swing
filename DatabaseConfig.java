@@ -108,7 +108,7 @@ public class DatabaseConfig {
       stmt.executeUpdate("INSERT INTO `users` (`username`, `password`, `email`,\r\n" + //
           "`first_name`, `last_name`, `phone_number`, `address`, `role`) \r\n" + //
           "VALUES ('admin', 'password', 'admin@example.com', 'Admin', 'User',\r\n" + //
-          "'09223456789', 'Here & There St.', 'ADMIN')\r\n" + //
+          "'09223456789', 'Imus', 'ADMIN')\r\n" + //
           "ON DUPLICATE KEY UPDATE\r\n" + //
           "   `username` = VALUES(`username`),\r\n" + //
           "   `email` = VALUES(`email`),\r\n" + //
@@ -120,8 +120,8 @@ public class DatabaseConfig {
 
       stmt.executeUpdate("INSERT INTO `users` (`username`, `password`, `email`,\r\n" + //
           "`first_name`, `last_name`, `phone_number`, `address`) \r\n" + //
-          "VALUES ('johndog', 'password', 'johndog@example.com', 'John', 'Dog',\r\n" + //
-          "'09223456790', 'Here St.')\r\n" + //
+          "VALUES ('jes', 'password', 'jes@example.com', 'Jes', 'Claridad',\r\n" + //
+          "'09223456790', 'Imus')\r\n" + //
           "ON DUPLICATE KEY UPDATE\r\n" + //
           "   `username` = VALUES(`username`),\r\n" + //
           "   `email` = VALUES(`email`),\r\n" + //
@@ -132,8 +132,8 @@ public class DatabaseConfig {
 
       stmt.executeUpdate("INSERT INTO `users` (`username`, `password`, `email`,\r\n" + //
           "`first_name`, `last_name`, `phone_number`, `address`) \r\n" + //
-          "VALUES ('user2', 'password', 'user2@example.com', 'User', 'Two',\r\n" + //
-          "'09223456791', 'There St.')\r\n" + //
+          "VALUES ('jordan', 'password', 'jordan@example.com', 'Jordan', 'Pedrena',\r\n" + //
+          "'09223456791', 'Imus')\r\n" + //
           "ON DUPLICATE KEY UPDATE\r\n" + //
           "   `username` = VALUES(`username`),\r\n" + //
           "   `email` = VALUES(`email`),\r\n" + //

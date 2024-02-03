@@ -11,6 +11,7 @@ public class PayElectricBill {
 
   // frame ng electricity
   public JFrame frame = new JFrame("Electricity");
+  public JLabel bg_image = new JLabel(new ImageIcon("meralco.png"));
 
   // label ng electricity
   public JLabel f2_electric_lab1 = new JLabel("Client Details:");
@@ -93,6 +94,7 @@ public class PayElectricBill {
     frame.setLayout(null);
 
     // frame add ng combo box sa electricity
+    frame.add(bg_image);
     frame.add(consumer_tf);
 
     // frame add ng label sa electricity
@@ -151,6 +153,7 @@ public class PayElectricBill {
 
     // background color
     frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    // bg_image.setBounds(0, 0, 920, 600);
     add_btn.setBackground(CustomColor.PRIMARY);
     pay_btn.setBackground(CustomColor.SUCCESS);
     back_btn.setBackground(CustomColor.WARNING);

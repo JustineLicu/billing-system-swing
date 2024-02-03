@@ -11,6 +11,7 @@ public class PayWaterBill {
 
   // frame ng water
   public JFrame frame = new JFrame("Water");
+  public JLabel bg_image = new JLabel(new ImageIcon("maynilad.png"));
 
   // label ng water
   public JLabel f2_water_lab1 = new JLabel("Client Details:");
@@ -93,6 +94,7 @@ public class PayWaterBill {
     frame.setLayout(null);
 
     // frame add ng combo box sa water
+    frame.add(bg_image);
     frame.add(consumer_tf);
 
     // frame add ng label sa water
@@ -151,6 +153,7 @@ public class PayWaterBill {
 
     // background color
     frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    // bg_image.setBounds(0, 0, 920, 600);
     add_btn.setBackground(CustomColor.PRIMARY);
     pay_btn.setBackground(CustomColor.SUCCESS);
     back_btn.setBackground(CustomColor.WARNING);

@@ -10,6 +10,7 @@ public class PayWifiBill {
   private Integer id;
 
   public JFrame frame = new JFrame("Internet");
+  public JLabel bg_image = new JLabel(new ImageIcon("wifi.png"));
 
   // label ng wifi
   public JLabel f3_wifilab1 = new JLabel("Client Details:");
@@ -80,6 +81,7 @@ public class PayWifiBill {
     frame.setLayout(null);
 
     // add ng label sa wifi
+    frame.add(bg_image);
     frame.add(f3_wifilab1);
     frame.add(f3_wifilab2);
     frame.add(f3_wifilab3);
@@ -134,6 +136,7 @@ public class PayWifiBill {
 
     // background color
     frame.getContentPane().setBackground(CustomColor.FRAME_BG);
+    // bg_image.setBounds(0, 0, 920, 600);
     add_btn.setBackground(CustomColor.PRIMARY);
     pay_btn.setBackground(CustomColor.SUCCESS);
     back_btn.setBackground(CustomColor.WARNING);
